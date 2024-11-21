@@ -13,6 +13,6 @@ RUN addgroup -g 1000 -S invidious && \
 COPY ./assets/ ./assets/
 COPY --from=builder /app/instances .
 
-EXPOSE 3000
+EXPOSE 7860
 USER invidious
 CMD ["/app/instances"]
